@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="600">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Content="." Grid.Row="4" Grid.Column="0" Margin="4" FontSize="40"/>
+        <Button Content="0" Grid.Row="4" Grid.Column="1" Margin="4" FontSize="40"/>
+        <Button Content="=" Grid.Row="4" Grid.Column="2" Margin="4" FontSize="40"/>
+        <Button Content="+" Grid.Row="4" Grid.Column="3" Margin="4" FontSize="40"/>
+        <Button Content="1" Grid.Row="3" Grid.Column="0" Margin="4" FontSize="40"/>
+        <Button Content="2" Grid.Row="3" Grid.Column="1" Margin="4" FontSize="40"/>
+        <Button Content="3" Grid.Row="3" Grid.Column="2" Margin="4" FontSize="40"/>
+        <Button Content="-" Grid.Row="3" Grid.Column="3" Margin="4" FontSize="40"/>
+        <Button Content="4" Grid.Row="2" Grid.Column="0" Margin="4" FontSize="40"/>
+        <Button Content="5" Grid.Row="2" Grid.Column="1" Margin="4" FontSize="40"/>
+        <Button Content="6" Grid.Row="2" Grid.Column="2" Margin="4" FontSize="40"/>
+        <Button Content="*" Grid.Row="2" Grid.Column="3" Margin="4" FontSize="40"/>
+        <Button Content="7" Grid.Row="1" Grid.Column="0" Margin="4" FontSize="40"/>
+        <Button Content="8" Grid.Row="1" Grid.Column="1" Margin="4" FontSize="40"/>
+        <Button Content="9" Grid.Row="1" Grid.Column="2" Margin="4" FontSize="40"/>
+        <Button Content="/" Grid.Row="1" Grid.Column="3" Margin="4" FontSize="40"/>
+        <TextBox Grid.Row="0" Grid.ColumnSpan="4" FontSize="40" Background="AntiqueWhite"
+                 BorderBrush="Black" Margin="4"/>
     </Grid>
 </Window>
